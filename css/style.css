@@ -7,10 +7,10 @@
     vertical-align: baseline;
 }
 
-nav,
+/* nav,
 section {
     display: block;
-}
+} */
 
 body {
     line-height: 1;
@@ -76,11 +76,22 @@ ul {
     animation: hover-fast-fade 0.4s ease;
 }
 
+@keyframes hover-fast-fade {
+    0% {
+        background-color: rgba(255, 255, 255, 0.158);
+        transition: color 0.3s ease;
+        transition: background-color 0.3s ease;
+        }
+        100% {
+        background-color: none;
+        }
+}
+
 .search {
     display: block;
 }
 
-.search-box {
+.controls a.search .search-box {
     width: 100%;
     height: 50px;
     background: white;
@@ -93,6 +104,112 @@ ul {
     animation: topRight 0.2s linear;
 }
 
+@keyframes topRight {
+    0% {
+        transform: scale(0.1);
+        transform: translateX(200%);
+        top: -200px;
+    }
+    100% {
+        transform: translateX(0%);
+        top: 0;
+    }
+
+}
+
+/* .search-box:active {
+    display: block;
+} */
+
+.controls a.search .search-box i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    font-size: 29px;
+    color: #075E54;
+    transform: scaleX(-1);
+}
+
+.controls a.search .search-box input.search-form {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    padding: 10px 10px 10px 60px;
+    font-size: 25px;
+    font-size: 1.5625rem;
+    color: #747474;
+    caret-color: #075E54;
+    transform: 0.2s;
+}
+
+.controls a.search .search-box input.search-form::placeholder{
+    color: #8e8e8e;
+}
+
+.controls a.search:active .search-box,
+.controls a.search:focus .search-box {
+    display: block;
+}
+
+.controls a.settings .settings-box {
+    height: auto;
+    background: white;
+    border: 1px solid #ececec;
+    border-radius: 2px;
+    margin: 5px;
+    padding-right: 30px;
+    z-index: 15;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none; 
+    box-shadow: 5px 4px 17px rgba(80, 80, 80, 0.336);
+    animation: topRight 0.2s linear;
+}
+
+@keyframes topRight {
+    0% {
+        transform: scale(0.1);
+        transform: translateX(200%);
+        top: -200px;
+    }
+    100% {
+        transform: translateX(0%);
+        top: 0;
+    }
+
+}
+
+.controls a.settings .settings-box ul {
+    list-style-type: none;
+}
+
+.controls a.settings .settings-box ul li {
+    display: block;
+    padding: 20px;
+    color: #747474;
+}
+
+.controls a.settings .settings-box ul li:hover{
+    color: #414141;
+    transition: color 0.3s ease;   
+}
+
+.controls a.settings .settings-box i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    font-size: 29px;
+    color: #075E54;
+    transform: scaleX(-1);   
+}
+
+.controls a.settings:active .settings-box,
+.controls a.settings:focus .settings-box {
+    display: block;    
+}
 
 .menu {
     list-style-type: none;
