@@ -7,10 +7,6 @@
     vertical-align: baseline;
 }
 
-/* nav,
-section {
-    display: block;
-} */
 
 body {
     line-height: 1;
@@ -19,11 +15,6 @@ body {
     font-size: 1rem;
     color: #000;
     overflow: auto;
-}
-
-ol,
-ul {
-    list-style: none;
 }
 
 .container {
@@ -65,7 +56,6 @@ ul {
 }
 
 .controls a {
-
     color: white;
     padding: 15px;
     display: inline-block;
@@ -81,15 +71,13 @@ ul {
         background-color: rgba(255, 255, 255, 0.158);
         transition: color 0.3s ease;
         transition: background-color 0.3s ease;
-        }
-        100% {
+    }
+
+    100% {
         background-color: none;
-        }
+    }
 }
 
-.search {
-    display: block;
-}
 
 .controls a.search .search-box {
     width: 100%;
@@ -110,6 +98,7 @@ ul {
         transform: translateX(200%);
         top: -200px;
     }
+
     100% {
         transform: translateX(0%);
         top: 0;
@@ -117,9 +106,6 @@ ul {
 
 }
 
-/* .search-box:active {
-    display: block;
-} */
 
 .controls a.search .search-box i {
     position: absolute;
@@ -143,7 +129,7 @@ ul {
     transform: 0.2s;
 }
 
-.controls a.search .search-box input.search-form::placeholder{
+.controls a.search .search-box input.search-form::placeholder {
     color: #8e8e8e;
 }
 
@@ -163,7 +149,7 @@ ul {
     position: absolute;
     top: 0;
     right: 0;
-    display: none; 
+    display: none;
     box-shadow: 5px 4px 17px rgba(80, 80, 80, 0.336);
     animation: topRight 0.2s linear;
 }
@@ -174,6 +160,7 @@ ul {
         transform: translateX(200%);
         top: -200px;
     }
+
     100% {
         transform: translateX(0%);
         top: 0;
@@ -191,9 +178,9 @@ ul {
     color: #747474;
 }
 
-.controls a.settings .settings-box ul li:hover{
+.controls a.settings .settings-box ul li:hover {
     color: #414141;
-    transition: color 0.3s ease;   
+    transition: color 0.3s ease;
 }
 
 .controls a.settings .settings-box i {
@@ -203,12 +190,12 @@ ul {
     margin: 10px;
     font-size: 29px;
     color: #075E54;
-    transform: scaleX(-1);   
+    transform: scaleX(-1);
 }
 
 .controls a.settings:active .settings-box,
 .controls a.settings:focus .settings-box {
-    display: block;    
+    display: block;
 }
 
 .menu {
@@ -239,6 +226,7 @@ ul {
 .menu .camera i {
     color: #cccccc
 }
+
 .menu li a {
     font-weight: 600;
     font-size: 15px;
@@ -289,17 +277,17 @@ ul {
 
 .messages .data:last-child .meta {
     border-bottom: none;
-  }
-  
+}
+
 .messages .data .avatar {
-height: 50px;
-border-radius: 100px;
-float: left;
-display: inline-block;
-overflow: hidden;
-min-width: 50px;
-width: 50px;
-margin: 10px 10px 0px 0px;
+    height: 50px;
+    border-radius: 100px;
+    float: left;
+    display: inline-block;
+    overflow: hidden;
+    min-width: 50px;
+    width: 50px;
+    margin: 10px 10px 0px 0px;
 }
 
 .messages .data .avatar img {
@@ -315,33 +303,33 @@ margin: 10px 10px 0px 0px;
     position: relative;
     width: 100%;
     border-bottom: 1px solid #eeeeee;
-  }
-  
-  .messages .data .meta h3.name {
+}
+
+.messages .data .meta h3.name {
     font-size: 18px;
     font-size: 1.125rem;
     font-weight: bold;
     margin-bottom: 8px;
     display: inline-block;
-  }
-  
-  .messages .data .meta p {
+}
+
+.messages .data .meta p {
     font-size: 14px;
-  
+
     line-height: 150%;
     color: #747474;
-  }
-  
-  .messages .data .meta .time {
+}
+
+.messages .data .meta .time {
     position: absolute;
     right: 0;
     top: 0;
     font-size: 14px;
     font-size: 0.875rem;
     color: #747474;
-  }
+}
 
-  .whatsapp-float {
+.whatsapp-float {
     position: fixed;
     z-index: 8;
     bottom: 0px;
@@ -355,18 +343,17 @@ margin: 10px 10px 0px 0px;
     border-radius: 100px;
     box-shadow: 0px 0px 10px rgba(44, 44, 44, 0.336);
     user-select: none;
-  }
+}
 
-  .whatsapp-float:hover {
+.whatsapp-float:hover {
     transition: -webkit-transform 0.3 ease;
     transition: transform 0.3 ease;
     transform: translateY(-2px);
 
-  }
+}
 
-  .whatsapp-float i {
+.whatsapp-float i {
     font-size: 25px;
     font-size: 1.5625rem;
     color: #fff;
-  }
-
+}
