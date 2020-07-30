@@ -1,1 +1,1 @@
-# whatsapp-ui
+# https://slavatel.github.io/whatsapp-ui/
