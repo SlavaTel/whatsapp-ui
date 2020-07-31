@@ -31,6 +31,11 @@ body {
 .status-bar .call-button,
 .status-bar .vert-button {
   padding: 15px 10px;
+
+}
+
+.status-bar .back-button a {
+  color: white;
 }
 
 .status-bar .back-button i,
